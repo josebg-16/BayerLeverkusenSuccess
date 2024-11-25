@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20243.24.1010.1014                               -->
-<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -11,24 +11,148 @@
     <IntuitiveSorting_SP2 />
     <MarkAnimation />
     <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
     <ObjectModelTableType />
     <SchemaViewerObjectModel />
     <SetMembershipControl />
     <SheetIdentifierTracking />
     <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='BayernLeverkusensUnbeatenSeason' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
+    <datasource inline='true' name='Clipboard_20241123T125504' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20241123T125504' name='Clipboard_20241123T125504leaf'>
+            <connection class='textscan' directory='/Users/josebaixauligimenez/Documents/Mi Repositorio de Tableau/Fuentes de datos' filename='Clipboard_20241123T125504.txt' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20241123T125504leaf' name='Clipboard_20241123T125504#txt' table='[Clipboard_20241123T125504#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator='&#9;'>
+            <column datatype='string' name='Squad' ordinal='0' />
+            <column datatype='real' name='Save%' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clipboard_20241123T125504#txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Squad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Squad]</local-name>
+            <parent-name>[Clipboard_20241123T125504#txt]</parent-name>
+            <remote-alias>Squad</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[Clipboard_20241123T125504]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Save%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Save%]</local-name>
+            <parent-name>[Clipboard_20241123T125504#txt]</parent-name>
+            <remote-alias>Save%</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Clipboard_20241123T125504]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clipboard_20241123T125504' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20241123T125504]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='/Users/josebaixauligimenez/Documents/Mi Repositorio de Tableau/Fuentes de datos/bayern_leverkusen.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Squad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Squad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Squad</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Clipboard_20241123T125504#txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Save%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Save%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Save%</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Clipboard_20241123T125504#txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20241123T125504' id='Clipboard_20241123T125504'>
+            <properties context=''>
+              <relation connection='Clipboard_20241123T125504leaf' name='Clipboard_20241123T125504#txt' table='[Clipboard_20241123T125504#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES' separator='&#9;'>
+                  <column datatype='string' name='Squad' ordinal='0' />
+                  <column datatype='real' name='Save%' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
     <datasource caption='data' inline='true' name='federated.0xuwwr70dyu9ni12ztss014jy67t' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='data' name='textscan.1gtc3w60ahmpro1fw9ci809anf9k'>
-            <connection class='textscan' directory='/Users/josebaixauligimenez/Desktop/MASTER FUTBOL/M2/Individual Task/BayerLeverkusenSuccess/scrapping_data' filename='data.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/josebaixauligimenez/Desktop/MASTER FUTBOL/M2/Individual Task/BayerLeverkusenSuccess/scrapping_data' filename='data.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1gtc3w60ahmpro1fw9ci809anf9k' name='data.csv' table='[data#csv]' type='table'>
@@ -544,6 +668,482 @@
       <column caption='Tot Dist' datatype='integer' name='[TotDist]' role='measure' type='quantitative' />
       <column caption='data.csv' datatype='table' name='[__tableau_internal_object_id__].[data.csv_F1E196CDAEC640069F45820FFDA3EE16]' role='measure' type='quantitative' />
       <column-instance column='[Squad]' derivation='None' name='[none:Squad:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='/Users/josebaixauligimenez/Documents/Mi Repositorio de Tableau/Fuentes de datos/bayern_lever.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Squad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Squad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Squad</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>G-xG</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[G-xG]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>G-xG</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sh/Gls</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sh/Gls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sh/Gls</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Save%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Save%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Save%</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PKcon</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PKcon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PKcon</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recov</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recov]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recov</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>A_SCA90</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[A_SCA90]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>A_SCA90</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>A_xG</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[A_xG]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>A_xG</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name># Pl</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[# Pl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias># Pl</remote-alias>
+              <ordinal>9</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Poss</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Poss]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Poss</remote-alias>
+              <ordinal>10</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>90s</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[90s]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>90s</remote-alias>
+              <ordinal>11</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Touches</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Touches]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Touches</remote-alias>
+              <ordinal>12</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Def Pen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Def Pen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Def Pen</remote-alias>
+              <ordinal>13</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Def 3rd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Def 3rd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Def 3rd</remote-alias>
+              <ordinal>14</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mid 3rd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mid 3rd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mid 3rd</remote-alias>
+              <ordinal>15</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Att 3rd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Att 3rd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Att 3rd</remote-alias>
+              <ordinal>16</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Att Pen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Att Pen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Att Pen</remote-alias>
+              <ordinal>17</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Live</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Live]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Live</remote-alias>
+              <ordinal>18</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Att</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Att]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Att</remote-alias>
+              <ordinal>19</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Succ</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Succ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Succ</remote-alias>
+              <ordinal>20</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Succ%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Succ%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Succ%</remote-alias>
+              <ordinal>21</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tkld</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tkld]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tkld</remote-alias>
+              <ordinal>22</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tkld%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Tkld%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tkld%</remote-alias>
+              <ordinal>23</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Carries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Carries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Carries</remote-alias>
+              <ordinal>24</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotDist</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotDist]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotDist</remote-alias>
+              <ordinal>25</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PrgDist</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PrgDist]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PrgDist</remote-alias>
+              <ordinal>26</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PrgC</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PrgC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PrgC</remote-alias>
+              <ordinal>27</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>1/3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[1/3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>1/3</remote-alias>
+              <ordinal>28</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CPA</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CPA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CPA</remote-alias>
+              <ordinal>29</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mis</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mis</remote-alias>
+              <ordinal>30</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dis</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Dis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dis</remote-alias>
+              <ordinal>31</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rec</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rec]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rec</remote-alias>
+              <ordinal>32</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PrgR</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PrgR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PrgR</remote-alias>
+              <ordinal>33</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PrgCom/90</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PrgCom/90]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PrgCom/90</remote-alias>
+              <ordinal>34</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PasLastThird/90</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PasLastThird/90]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PasLastThird/90</remote-alias>
+              <ordinal>35</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -754,89 +1354,8 @@
                 </columns>
               </relation>
             </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
-    <datasource inline='true' name='Clipboard_20241123T125504' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Clipboard_20241123T125504' name='Clipboard_20241123T125504leaf'>
-            <connection class='textscan' directory='/Users/josebaixauligimenez/Documents/Mi Repositorio de Tableau/Fuentes de datos' filename='Clipboard_20241123T125504.txt' />
-          </named-connection>
-        </named-connections>
-        <relation connection='Clipboard_20241123T125504leaf' name='Clipboard_20241123T125504#txt' table='[Clipboard_20241123T125504#txt]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='es_ES' separator='&#9;'>
-            <column datatype='string' name='Squad' ordinal='0' />
-            <column datatype='real' name='Save%' ordinal='1' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Clipboard_20241123T125504#txt]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
-              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Squad</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Squad]</local-name>
-            <parent-name>[Clipboard_20241123T125504#txt]</parent-name>
-            <remote-alias>Squad</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LES_RES' />
-            <object-id>[Clipboard_20241123T125504]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Save%</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Save%]</local-name>
-            <parent-name>[Clipboard_20241123T125504#txt]</parent-name>
-            <remote-alias>Save%</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <object-id>[Clipboard_20241123T125504]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Clipboard_20241123T125504' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20241123T125504]' role='measure' type='quantitative' />
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <object-graph>
-        <objects>
-          <object caption='Clipboard_20241123T125504' id='Clipboard_20241123T125504'>
-            <properties context=''>
-              <relation connection='Clipboard_20241123T125504leaf' name='Clipboard_20241123T125504#txt' table='[Clipboard_20241123T125504#txt]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='es_ES' separator='&#9;'>
-                  <column datatype='string' name='Squad' ordinal='0' />
-                  <column datatype='real' name='Save%' ordinal='1' />
-                </columns>
-              </relation>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -1956,10 +2475,22 @@
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98400' id='25' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='28' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+                <zone forceUpdate='true' h='5500' id='27' type-v2='text' w='75000' x='12500' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>The Metrics Behind the Magic: Bayer Leverkusen&apos;s Unbeaten Season</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
                 <zone fixed-size='280' h='43000' id='13' is-fixed='true' name='Team Passes' w='48333' x='0' y='7500'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1978,7 +2509,16 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='45700' id='10' is-fixed='true' name='Rivals Expected Goals' w='14139' x='52917' y='50800'>
+                <zone fixed-size='280' h='43000' id='5' is-fixed='true' name='Teams Effectiveness' w='48333' x='0' y='52000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45700' id='10' is-fixed='true' name='Rivals Expected Goals' w='14166' x='54583' y='52000'>
                   <layout-cache fixed-size-w='162' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1988,7 +2528,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='45700' id='11' is-fixed='true' name='Goalkeeper' w='14139' x='67056' y='50800'>
+                <zone fixed-size='280' h='45700' id='11' is-fixed='true' name='Goalkeeper' w='14166' x='68749' y='52000'>
                   <layout-cache fixed-size-h='424' fixed-size-w='162' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1998,17 +2538,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='45700' id='8' is-fixed='true' name='Penalties' w='14139' x='81195' y='50800'>
+                <zone fixed-size='280' h='45700' id='8' is-fixed='true' name='Penalties' w='14168' x='82915' y='52000'>
                   <layout-cache fixed-size-w='162' type-h='fixed' type-w='fixed' />
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='43000' id='5' is-fixed='true' name='Teams Effectiveness' w='48333' x='0' y='52000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2289,7 +2820,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='12' />
       <simple-id uuid='{5303C713-3B9C-4D51-A7D6-BC377F0792F4}' />
     </window>
     <window class='worksheet' name='Sheet 9'>
